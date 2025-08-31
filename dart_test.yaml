@@ -1,0 +1,4 @@
+tags:
+  performance:
+    description: Performance tests that measure execution time and memory usage
+    timeout: 30s

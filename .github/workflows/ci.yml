@@ -31,14 +31,14 @@ jobs:
     - name: Analyze project source
       run: dart analyze
     
-    - name: Install lcov
-      run: sudo apt-get update && sudo apt-get install -y lcov
-    
     - name: Run tests
       run: dart test --coverage=coverage
     
-    - name: Generate coverage report
-      run: genhtml coverage/ -o coverage/html
+    - name: Install coverage tools
+      run: dart pub global activate coverage
+    
+    - name: Convert coverage to lcov
+      run: dart pub global run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info --packages=.dart_tool/package_config.json --report-on=lib
     
     - name: Upload coverage reports
       uses: codecov/codecov-action@v3
