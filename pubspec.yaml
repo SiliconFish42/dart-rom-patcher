@@ -1,0 +1,24 @@
+name: rom_patcher
+description: A Dart library for applying IPS, BPS, and UPS patches to ROMs, inspired by Floating IPS and Rom Patcher JS.
+version: 0.1.0
+homepage: https://github.com/jtrouth/rom_patcher
+repository: https://github.com/jtrouth/rom_patcher
+issue_tracker: https://github.com/jtrouth/rom_patcher/issues
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies: {}
+
+dev_dependencies:
+  test: ^1.24.0
+  lints: ^3.0.0
+
+topics:
+  - rom
+  - patch
+  - ips
+  - bps
+  - ups
+  - gaming
+  - emulation
