@@ -40,6 +40,12 @@ jobs:
     - name: Convert coverage to lcov
       run: dart pub global run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info --packages=.dart_tool/package_config.json --report-on=lib
     
+    - name: Upload test results to Codecov
+      if: ${{ !cancelled() }}
+      uses: codecov/test-results-action@v1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+
     - name: Upload coverage reports
       uses: codecov/codecov-action@v5
       with:
