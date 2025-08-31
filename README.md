@@ -362,7 +362,7 @@ This project adheres to the [Contributor Covenant Code of Conduct](CODE_OF_CONDU
 
 ## Security
 
-Please report security vulnerabilities via email to [INSERT SECURITY EMAIL] rather than through public GitHub issues. See our [Security Policy](SECURITY.md) for more details.
+Please report security vulnerabilities via email to <siliconfish42@protonmail.com> rather than through public GitHub issues. See our [Security Policy](SECURITY.md) for more details.
 
 ## License
 

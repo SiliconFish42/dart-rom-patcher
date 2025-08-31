@@ -16,7 +16,7 @@ We take the security of ROM Patcher seriously. If you believe you have found a s
 
 **Please do NOT report security vulnerabilities through public GitHub issues.**
 
-Instead, please report them via email to [INSERT SECURITY EMAIL].
+Instead, please report them via email to <siliconfish42@protonmail.com>.
 
 ### What to Include
 
