@@ -1,0 +1,18 @@
+# Global owners
+* @SiliconFish42
+
+# Specific file/directory owners
+/lib/ @SiliconFish42
+/test/ @SiliconFish42
+/example/ @SiliconFish42
+/pubspec.yaml @SiliconFish42
+/README.md @SiliconFish42
+/CHANGELOG.md @SiliconFish42
+/LICENSE @SiliconFish42
+
+# Documentation
+/docs/ @SiliconFish42
+*.md @SiliconFish42
+
+# GitHub configuration
+/.github/ @SiliconFish42

@@ -1,0 +1,12 @@
+dartdoc:
+  include:
+    - lib/
+  exclude:
+    - lib/src/patchers/
+  linkToSource:
+    root: '.'
+    uriTemplate: 'https://github.com/SiliconFish42/dart-rom-patcher/blob/main/{file}#{line}'
+  linkTo:
+    - https://api.dart.dev/stable/
+  output: doc/api
+  favicon: https://dart.dev/assets/shared/dart/icon/64.png

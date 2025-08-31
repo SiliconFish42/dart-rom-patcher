@@ -339,7 +339,30 @@ void main(List<String> args) async {
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions to ROM Patcher! Please see our [Contributing Guidelines](CONTRIBUTING.md) for detailed information on how to get started.
+
+### Quick Start
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Run tests (`dart test`)
+5. Format code (`dart format .`)
+6. Commit your changes (`git commit -m 'feat: add amazing feature'`)
+7. Push to the branch (`git push origin feature/amazing-feature`)
+8. Open a Pull Request
+
+### Development
+
+For detailed development information, see our [Development Guide](DEVELOPMENT.md).
+
+### Code of Conduct
+
+This project adheres to the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+
+## Security
+
+Please report security vulnerabilities via email to [INSERT SECURITY EMAIL] rather than through public GitHub issues. See our [Security Policy](SECURITY.md) for more details.
 
 ## License
 
