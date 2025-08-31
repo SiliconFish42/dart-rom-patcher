@@ -9,4 +9,3 @@ dartdoc:
   linkTo:
     - https://api.dart.dev/stable/
   output: doc/api
-  favicon: https://dart.dev/assets/shared/dart/icon/64.png
