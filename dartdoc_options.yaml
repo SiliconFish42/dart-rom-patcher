@@ -1,11 +1,9 @@
 dartdoc:
-  include:
-    - lib/
-  exclude:
-    - lib/src/patchers/
+  nodoc:
+    - lib/src/patchers/*.dart
   linkToSource:
     root: '.'
-    uriTemplate: 'https://github.com/SiliconFish42/dart-rom-patcher/blob/main/{file}#{line}'
+    uriTemplate: 'https://github.com/SiliconFish42/dart-rom-patcher/blob/main/%f%#%l%'
   linkTo:
     - https://api.dart.dev/stable/
   output: doc/api
