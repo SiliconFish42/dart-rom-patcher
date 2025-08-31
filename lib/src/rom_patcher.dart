@@ -100,13 +100,19 @@ class PatchUtils {
   ///
   /// Returns true if the header is valid, false otherwise.
   static bool validateHeader(Uint8List patch, PatchFormat format) {
-    if (patch.length < 4) return false;
+    if (patch.length < 4) {
+      return false;
+    }
 
     final signature = format.signature;
-    if (patch.length < signature.length) return false;
+    if (patch.length < signature.length) {
+      return false;
+    }
 
     for (int i = 0; i < signature.length; i++) {
-      if (patch[i] != signature[i]) return false;
+      if (patch[i] != signature[i]) {
+        return false;
+      }
     }
 
     return true;

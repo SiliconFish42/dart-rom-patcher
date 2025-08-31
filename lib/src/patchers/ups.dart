@@ -73,7 +73,9 @@ class UpsPatcher {
       final xorData = <int>[];
       while (offset < patch.length - _footerSize) {
         final byte = patch[offset++];
-        if (byte == 0) break;
+        if (byte == 0) {
+          break;
+        }
         xorData.add(byte);
       }
 
@@ -95,7 +97,9 @@ class UpsPatcher {
 
   /// Validates the UPS header.
   static bool _isValidHeader(Uint8List patch) {
-    if (patch.length < _headerSize) return false;
+    if (patch.length < _headerSize) {
+      return false;
+    }
 
     return patch[0] == 0x55 && // U
         patch[1] == 0x50 && // P

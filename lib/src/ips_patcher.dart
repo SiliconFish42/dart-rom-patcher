@@ -121,7 +121,9 @@ class IpsPatcher {
 
   /// Validates the IPS header.
   static bool _isValidHeader(Uint8List patch) {
-    if (patch.length < _headerSize) return false;
+    if (patch.length < _headerSize) {
+      return false;
+    }
 
     return patch[0] == 0x50 && // P
         patch[1] == 0x41 && // A
@@ -132,7 +134,9 @@ class IpsPatcher {
 
   /// Validates the IPS footer.
   static bool _isValidFooter(Uint8List patch) {
-    if (patch.length < _footerSize) return false;
+    if (patch.length < _footerSize) {
+      return false;
+    }
 
     final footerStart = patch.length - _footerSize;
     return patch[footerStart] == 0x45 && // E
